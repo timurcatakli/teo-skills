@@ -1,5 +1,16 @@
 # Behavioral review cases
 
+## Initial release verification — September 24, 2026
+
+- Passed the skill-creator frontmatter and naming validator.
+- Verified all local Markdown links and checked the publication diff for whitespace errors.
+- Confirmed GitHub visibility is public and the default branch is `main`.
+- Discovered the published skill with `npx skills add timurcatakli/teo-skills --list`.
+- Installed from GitHub into a disposable project for both Codex and Claude Code; installed `SKILL.md` content matched the source byte for byte.
+- Reviewed the instructions against the cases below. Live model conversations across hosts have not been benchmarked; the installation checks establish packaging compatibility, not behavioral guarantees.
+
+## Manual acceptance suite
+
 Use these cases when changing `teo-improve-prompt`. They are a manual acceptance suite, not an automated benchmark or a claim of validation across every model.
 
 For each case, load the skill in a compatible agent, send the input, inspect its output, and continue the conversation where indicated. The rewritten wording may vary. Judge preserved intent and behavior rather than matching an exact sentence.
